@@ -1,0 +1,39 @@
+{
+	"schemaVersion": 1,
+	"id": "cookiemod1",
+	"version": "${version}",
+	"name": "Cookie Mod",
+	"description": "This is an example description! Tell everyone what your mod is about!",
+	"authors": [
+		"Artem"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "CC0-1.0",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+          "net.artcookie.cookiemod1.CookieMod1"
+		],
+		"client": [
+			"net.artcookie.cookiemod1.CookieMod1Client"
+		],
+		"fabric-datagen": [
+			"net.artcookie.cookiemod1.CookieMod1DataGenerator"
+		]
+	},
+	"mixins": [
+		"cookiemod1.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.14.21",
+		"minecraft": "~1.20.1",
+		"java": ">=17",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
