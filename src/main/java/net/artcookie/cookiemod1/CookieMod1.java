@@ -1,5 +1,7 @@
 package net.artcookie.cookiemod1;
 
+import net.artcookie.cookiemod1.item.ModItemGroups;
+import net.artcookie.cookiemod1.item.ModItems;
 import net.fabricmc.api.ModInitializer;
 
 import org.slf4j.Logger;
@@ -11,6 +13,7 @@ public class CookieMod1 implements ModInitializer {
 
 	@Override
 	public void onInitialize() {
-
+		ModItemGroups.registerItemGroups();
+		ModItems.registerModItems();
 	}
 }
