@@ -2,5 +2,7 @@
   "item.cookiemod1.golden_cookie": "Golden Cookie",
   "item.cookiemod1.diamond_cookie": "Diamond Cookie",
 
+  "block.cookiemod1.dough_block": "Block of Dough",
+
   "itemgroup.cookie": "Cookie Mastery"
 }

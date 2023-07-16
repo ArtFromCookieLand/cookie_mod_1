@@ -1,6 +1,7 @@
 package net.artcookie.cookiemod1.item;
 
 import net.artcookie.cookiemod1.CookieMod1;
+import net.artcookie.cookiemod1.block.ModBlocks;
 import net.fabricmc.fabric.api.itemgroup.v1.FabricItemGroup;
 import net.minecraft.item.ItemGroup;
 import net.minecraft.item.ItemStack;
@@ -13,11 +14,12 @@ public class ModItemGroups {
 
     public static final ItemGroup COOKIE_GROUP = Registry.register(Registries.ITEM_GROUP,
             new Identifier(CookieMod1.MOD_ID, "golden_cookie"),
-            FabricItemGroup.builder().displayName(Text.translatable("itemgroup.cookie"))
+            FabricItemGroup.builder().displayName(Text.translatable("itemgroup.cookie")) // name
                     .icon(() -> new ItemStack(ModItems.DIAMOND_COOKIE)).entries((displayContext, entries) -> {
-
+                        // items adding here
                         entries.add(ModItems.GOLDEN_COOKIE);
                         entries.add(ModItems.DIAMOND_COOKIE);
+                        entries.add(ModBlocks.DOUGH_BLOCK);
 
 
                     }).build());

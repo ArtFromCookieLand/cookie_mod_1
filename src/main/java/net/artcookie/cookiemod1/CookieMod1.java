@@ -1,5 +1,6 @@
 package net.artcookie.cookiemod1;
 
+import net.artcookie.cookiemod1.block.ModBlocks;
 import net.artcookie.cookiemod1.item.ModItemGroups;
 import net.artcookie.cookiemod1.item.ModItems;
 import net.fabricmc.api.ModInitializer;
@@ -15,5 +16,6 @@ public class CookieMod1 implements ModInitializer {
 	public void onInitialize() {
 		ModItemGroups.registerItemGroups();
 		ModItems.registerModItems();
+		ModBlocks.registerModBlocks();
 	}
 }
